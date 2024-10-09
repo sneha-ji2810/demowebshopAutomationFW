@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="SubscriptionTest(failed)">
+    <classes>
+      <class name="com.demowebshop.tests.SubScriptionTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initDriver"/>
+          <include name="userAbleToSubscribeWithValidMail"/>
+        </methods>
+      </class> <!-- com.demowebshop.tests.SubScriptionTest -->
+    </classes>
+  </test> <!-- SubscriptionTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
