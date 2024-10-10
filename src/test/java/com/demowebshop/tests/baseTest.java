@@ -2,8 +2,6 @@ package com.demowebshop.tests;
 
 import java.io.IOException;
 
-
-
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
