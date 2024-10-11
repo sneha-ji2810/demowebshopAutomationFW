@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import utils.PageActions;
+import com.demoshop.utils.PageActions;
 
 public class SearchPage extends PageActions {
 

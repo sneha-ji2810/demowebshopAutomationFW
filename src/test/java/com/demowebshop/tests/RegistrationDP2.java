@@ -8,9 +8,6 @@ import org.testng.annotations.Test;
 
 import com.demoshop.model.Person;
 import com.github.javafaker.Faker;
-import com.sun.tools.javac.util.List;
-
-import utils.UniqueGenerator;
 
 public class RegistrationDP2 extends baseTest {
 	

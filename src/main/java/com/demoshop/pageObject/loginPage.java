@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import utils.PageActions;
-import utils.WaitUtils;
+import com.demoshop.utils.PageActions;
+import com.demoshop.utils.WaitUtils;
 
 public class loginPage extends PageActions {
 	

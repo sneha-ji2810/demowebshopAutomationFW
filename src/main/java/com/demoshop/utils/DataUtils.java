@@ -1,4 +1,4 @@
-package utils;
+package com.demoshop.utils;
 
 import com.github.javafaker.Faker;
 

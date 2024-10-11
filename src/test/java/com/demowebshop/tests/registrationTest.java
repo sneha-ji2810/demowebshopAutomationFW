@@ -7,9 +7,8 @@ import org.testng.annotations.Test;
 
 import com.demoshop.pageObject.loginPage;
 import com.demoshop.pageObject.registerPage;
+import com.demoshop.utils.UniqueGenerator;
 import com.github.javafaker.Faker;
-
-import utils.UniqueGenerator;
 
 public class registrationTest extends baseTest{
 	

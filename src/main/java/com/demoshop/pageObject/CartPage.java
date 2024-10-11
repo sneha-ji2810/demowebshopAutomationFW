@@ -10,9 +10,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import utils.PageActions;
-import utils.UniqueGenerator;
-import utils.WaitUtils;
+import com.demoshop.utils.PageActions;
+import com.demoshop.utils.UniqueGenerator;
+import com.demoshop.utils.WaitUtils;
 
 
 

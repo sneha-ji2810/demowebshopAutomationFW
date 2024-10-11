@@ -4,8 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.demoshop.pageObject.ItemsPage;
-
-import utils.DataUtils;
+import com.demoshop.utils.DataUtils;
 
 public class E2EChekoutTest extends baseTest {
 	

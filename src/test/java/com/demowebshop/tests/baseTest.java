@@ -23,8 +23,7 @@ import com.demoshop.pageObject.ItemsPage;
 import com.demoshop.pageObject.SearchPage;
 import com.demoshop.pageObject.loginPage;
 import com.demoshop.pageObject.registerPage;
-
-import utils.TestProperties;
+import com.demoshop.utils.TestProperties;
 
 public class baseTest {
 	

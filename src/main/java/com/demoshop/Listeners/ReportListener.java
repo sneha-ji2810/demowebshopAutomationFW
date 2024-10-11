@@ -7,8 +7,7 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-
-import utils.ReportUtil;
+import com.demoshop.utils.ReportUtil;
 
 public class ReportListener implements ITestListener {
 
@@ -20,15 +19,18 @@ public class ReportListener implements ITestListener {
 		ExtentTest test = extent.createTest(result.getMethod().getMethodName());
 		extentTest.set(test);
 	}
+	@Override
 	public void onTestSuccess(ITestResult result) {
 		extentTest.get().log(Status.PASS, "Test Pass");
 	}
 	
-	public void onTestFailed(ITestResult result) {
+	@Override
+	public void onTestFailure(ITestResult result) {
 		extentTest.get().log(Status.FAIL, result.getThrowable());
 	}
 	
-	public void onTestFinish(ITestContext context) {
+	@Override
+	public void onFinish(ITestContext context) {
 		extent.flush();
 	}
 }

@@ -5,8 +5,8 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import utils.ExcelReader;
-import utils.UniqueGenerator;
+import com.demoshop.utils.ExcelReader;
+import com.demoshop.utils.UniqueGenerator;
 
 public class ExcelReadRegistrationTest extends baseTest {
 	

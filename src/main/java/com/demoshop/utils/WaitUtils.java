@@ -1,4 +1,4 @@
-package utils;
+package com.demoshop.utils;
 
 import java.time.Duration;
 
