@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-12T15:04:25 IST" name="Suite" finished-at="2024-10-12T15:05:40 IST" duration-ms="74630">
+  <suite started-at="2024-10-12T15:07:07 IST" name="Suite" finished-at="2024-10-12T15:08:25 IST" duration-ms="77455">
     <groups>
       <group name="Smoke">
         <method signature="ApparelAndShoesProductTest.verifyApparelAndShoesDisplayItems()[pri:0, instance:com.demowebshop.tests.ApparelAndShoesProductTest@5745ca0e]" name="verifyApparelAndShoesDisplayItems" class="com.demowebshop.tests.ApparelAndShoesProductTest"/>
@@ -10,72 +10,9 @@
         <method signature="E2EChekoutTest.verifyNewUserRegisterAndCheckoutProduct()[pri:0, instance:com.demowebshop.tests.E2EChekoutTest@333d4a8c]" name="verifyNewUserRegisterAndCheckoutProduct" class="com.demowebshop.tests.E2EChekoutTest"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-10-12T15:04:25 IST" name="SearchTest" finished-at="2024-10-12T15:05:02 IST" duration-ms="36792">
-      <class name="com.demowebshop.tests.DiamondSearchTest">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.DiamondSearchTest@3ba987b8]" started-at="2024-10-12T15:04:25 IST" name="initDriver" finished-at="2024-10-12T15:04:45 IST" duration-ms="19798" status="PASS">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initDriver -->
-        <test-method signature="verifyDiamondTextInSearchResult()[pri:0, instance:com.demowebshop.tests.DiamondSearchTest@3ba987b8]" started-at="2024-10-12T15:04:45 IST" name="verifyDiamondTextInSearchResult" finished-at="2024-10-12T15:04:58 IST" duration-ms="13334" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDiamondTextInSearchResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.DiamondSearchTest@3ba987b8]" started-at="2024-10-12T15:04:58 IST" name="tearDown" finished-at="2024-10-12T15:05:02 IST" duration-ms="3591" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.demowebshop.tests.DiamondSearchTest -->
-    </test> <!-- SearchTest -->
-    <test started-at="2024-10-12T15:04:25 IST" name="ProductListTest" finished-at="2024-10-12T15:05:02 IST" duration-ms="36793">
-      <class name="com.demowebshop.tests.ApparelAndShoesProductTest">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.ApparelAndShoesProductTest@5745ca0e]" started-at="2024-10-12T15:04:25 IST" name="initDriver" finished-at="2024-10-12T15:04:36 IST" duration-ms="11072" status="PASS">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initDriver -->
-        <test-method signature="verifyApparelAndShoesDisplayItems()[pri:0, instance:com.demowebshop.tests.ApparelAndShoesProductTest@5745ca0e]" started-at="2024-10-12T15:04:36 IST" name="verifyApparelAndShoesDisplayItems" finished-at="2024-10-12T15:05:00 IST" duration-ms="23310" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyApparelAndShoesDisplayItems -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.ApparelAndShoesProductTest@5745ca0e]" started-at="2024-10-12T15:05:00 IST" name="tearDown" finished-at="2024-10-12T15:05:02 IST" duration-ms="2346" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.demowebshop.tests.ApparelAndShoesProductTest -->
-    </test> <!-- ProductListTest -->
-    <test started-at="2024-10-12T15:04:25 IST" name="LoginTest" finished-at="2024-10-12T15:05:02 IST" duration-ms="36676">
-      <class name="com.demowebshop.tests.loginTest">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.loginTest@15a34df2]" started-at="2024-10-12T15:04:25 IST" name="initDriver" finished-at="2024-10-12T15:04:39 IST" duration-ms="14143" status="PASS">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initDriver -->
-        <test-method signature="verifyUserAbleToLoginwithValidCredn()[pri:0, instance:com.demowebshop.tests.loginTest@15a34df2]" started-at="2024-10-12T15:04:39 IST" name="verifyUserAbleToLoginwithValidCredn" finished-at="2024-10-12T15:04:50 IST" duration-ms="11080" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserAbleToLoginwithValidCredn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.loginTest@15a34df2]" started-at="2024-10-12T15:04:50 IST" name="tearDown" finished-at="2024-10-12T15:05:02 IST" duration-ms="11426" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.demowebshop.tests.loginTest -->
-    </test> <!-- LoginTest -->
-    <test started-at="2024-10-12T15:04:25 IST" name="SearchBoxTest" finished-at="2024-10-12T15:05:07 IST" duration-ms="42261">
+    <test started-at="2024-10-12T15:07:07 IST" name="SearchBoxTest" finished-at="2024-10-12T15:07:25 IST" duration-ms="18127">
       <class name="com.demowebshop.tests.EmptySearchCaseTest">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.EmptySearchCaseTest@68c9d179]" started-at="2024-10-12T15:04:25 IST" name="initDriver" finished-at="2024-10-12T15:04:41 IST" duration-ms="15587" status="PASS">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.EmptySearchCaseTest@68c9d179]" started-at="2024-10-12T15:07:07 IST" name="initDriver" finished-at="2024-10-12T15:07:24 IST" duration-ms="16348" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -84,19 +21,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="verifySearchWithEmptyKeyword()[pri:0, instance:com.demowebshop.tests.EmptySearchCaseTest@68c9d179]" started-at="2024-10-12T15:04:41 IST" name="verifySearchWithEmptyKeyword" finished-at="2024-10-12T15:04:43 IST" duration-ms="2119" status="PASS">
+        <test-method signature="verifySearchWithEmptyKeyword()[pri:0, instance:com.demowebshop.tests.EmptySearchCaseTest@68c9d179]" started-at="2024-10-12T15:07:24 IST" name="verifySearchWithEmptyKeyword" finished-at="2024-10-12T15:07:24 IST" duration-ms="631" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchWithEmptyKeyword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.EmptySearchCaseTest@68c9d179]" started-at="2024-10-12T15:04:43 IST" name="tearDown" finished-at="2024-10-12T15:05:07 IST" duration-ms="24510" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.EmptySearchCaseTest@68c9d179]" started-at="2024-10-12T15:07:24 IST" name="tearDown" finished-at="2024-10-12T15:07:25 IST" duration-ms="1050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.demowebshop.tests.EmptySearchCaseTest -->
     </test> <!-- SearchBoxTest -->
-    <test started-at="2024-10-12T15:05:03 IST" name="SubscriptionTest" finished-at="2024-10-12T15:05:18 IST" duration-ms="14827">
-      <class name="com.demowebshop.tests.SubScriptionTest">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.SubScriptionTest@14fc5f04]" started-at="2024-10-12T15:05:03 IST" name="initDriver" finished-at="2024-10-12T15:05:15 IST" duration-ms="11249" status="PASS">
+    <test started-at="2024-10-12T15:07:07 IST" name="ProductListTest" finished-at="2024-10-12T15:07:27 IST" duration-ms="20251">
+      <class name="com.demowebshop.tests.ApparelAndShoesProductTest">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.ApparelAndShoesProductTest@5745ca0e]" started-at="2024-10-12T15:07:07 IST" name="initDriver" finished-at="2024-10-12T15:07:21 IST" duration-ms="13936" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -105,19 +42,98 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="userAbleToSubscribeWithValidMail()[pri:0, instance:com.demowebshop.tests.SubScriptionTest@14fc5f04]" started-at="2024-10-12T15:05:15 IST" name="userAbleToSubscribeWithValidMail" finished-at="2024-10-12T15:05:16 IST" duration-ms="1855" status="PASS">
+        <test-method signature="verifyApparelAndShoesDisplayItems()[pri:0, instance:com.demowebshop.tests.ApparelAndShoesProductTest@5745ca0e]" started-at="2024-10-12T15:07:21 IST" name="verifyApparelAndShoesDisplayItems" finished-at="2024-10-12T15:07:23 IST" duration-ms="1322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApparelAndShoesDisplayItems -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.ApparelAndShoesProductTest@5745ca0e]" started-at="2024-10-12T15:07:23 IST" name="tearDown" finished-at="2024-10-12T15:07:27 IST" duration-ms="4863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demowebshop.tests.ApparelAndShoesProductTest -->
+    </test> <!-- ProductListTest -->
+    <test started-at="2024-10-12T15:07:07 IST" name="LoginTest" finished-at="2024-10-12T15:07:43 IST" duration-ms="35968">
+      <class name="com.demowebshop.tests.loginTest">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.loginTest@15a34df2]" started-at="2024-10-12T15:07:07 IST" name="initDriver" finished-at="2024-10-12T15:07:26 IST" duration-ms="18317" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="verifyUserAbleToLoginwithValidCredn()[pri:0, instance:com.demowebshop.tests.loginTest@15a34df2]" started-at="2024-10-12T15:07:26 IST" name="verifyUserAbleToLoginwithValidCredn" finished-at="2024-10-12T15:07:31 IST" duration-ms="5933" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Logged Mail is not matching expected [SnehaBEnoy@mail.com] but found [obsqura24@gmail.com]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Logged Mail is not matching expected [SnehaBEnoy@mail.com] but found [obsqura24@gmail.com]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.demowebshop.tests.loginTest.verifyUserAbleToLoginwithValidCredn(loginTest.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserAbleToLoginwithValidCredn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.loginTest@15a34df2]" started-at="2024-10-12T15:07:32 IST" name="tearDown" finished-at="2024-10-12T15:07:43 IST" duration-ms="11151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demowebshop.tests.loginTest -->
+    </test> <!-- LoginTest -->
+    <test started-at="2024-10-12T15:07:27 IST" name="SubscriptionTest" finished-at="2024-10-12T15:07:44 IST" duration-ms="16922">
+      <class name="com.demowebshop.tests.SubScriptionTest">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.SubScriptionTest@14fc5f04]" started-at="2024-10-12T15:07:27 IST" name="initDriver" finished-at="2024-10-12T15:07:33 IST" duration-ms="6479" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="userAbleToSubscribeWithValidMail()[pri:0, instance:com.demowebshop.tests.SubScriptionTest@14fc5f04]" started-at="2024-10-12T15:07:33 IST" name="userAbleToSubscribeWithValidMail" finished-at="2024-10-12T15:07:37 IST" duration-ms="3744" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userAbleToSubscribeWithValidMail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.SubScriptionTest@14fc5f04]" started-at="2024-10-12T15:05:16 IST" name="tearDown" finished-at="2024-10-12T15:05:18 IST" duration-ms="1720" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.SubScriptionTest@14fc5f04]" started-at="2024-10-12T15:07:37 IST" name="tearDown" finished-at="2024-10-12T15:07:44 IST" duration-ms="6691" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.demowebshop.tests.SubScriptionTest -->
     </test> <!-- SubscriptionTest -->
-    <test started-at="2024-10-12T15:05:03 IST" name="E2E" finished-at="2024-10-12T15:05:36 IST" duration-ms="32364">
-      <class name="com.demowebshop.tests.E2EChekoutTest">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.E2EChekoutTest@333d4a8c]" started-at="2024-10-12T15:05:03 IST" name="initDriver" finished-at="2024-10-12T15:05:08 IST" duration-ms="4348" status="PASS">
+    <test started-at="2024-10-12T15:07:07 IST" name="SearchTest" finished-at="2024-10-12T15:07:44 IST" duration-ms="36721">
+      <class name="com.demowebshop.tests.DiamondSearchTest">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.DiamondSearchTest@3ba987b8]" started-at="2024-10-12T15:07:07 IST" name="initDriver" finished-at="2024-10-12T15:07:25 IST" duration-ms="17627" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -126,19 +142,40 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="verifyNewUserRegisterAndCheckoutProduct()[pri:0, instance:com.demowebshop.tests.E2EChekoutTest@333d4a8c]" started-at="2024-10-12T15:05:08 IST" name="verifyNewUserRegisterAndCheckoutProduct" finished-at="2024-10-12T15:05:35 IST" duration-ms="27765" status="PASS">
+        <test-method signature="verifyDiamondTextInSearchResult()[pri:0, instance:com.demowebshop.tests.DiamondSearchTest@3ba987b8]" started-at="2024-10-12T15:07:25 IST" name="verifyDiamondTextInSearchResult" finished-at="2024-10-12T15:07:29 IST" duration-ms="3880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDiamondTextInSearchResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.DiamondSearchTest@3ba987b8]" started-at="2024-10-12T15:07:29 IST" name="tearDown" finished-at="2024-10-12T15:07:44 IST" duration-ms="15131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demowebshop.tests.DiamondSearchTest -->
+    </test> <!-- SearchTest -->
+    <test started-at="2024-10-12T15:07:27 IST" name="E2E" finished-at="2024-10-12T15:07:58 IST" duration-ms="30840">
+      <class name="com.demowebshop.tests.E2EChekoutTest">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.E2EChekoutTest@333d4a8c]" started-at="2024-10-12T15:07:27 IST" name="initDriver" finished-at="2024-10-12T15:07:35 IST" duration-ms="7306" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="verifyNewUserRegisterAndCheckoutProduct()[pri:0, instance:com.demowebshop.tests.E2EChekoutTest@333d4a8c]" started-at="2024-10-12T15:07:35 IST" name="verifyNewUserRegisterAndCheckoutProduct" finished-at="2024-10-12T15:07:55 IST" duration-ms="20639" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNewUserRegisterAndCheckoutProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.E2EChekoutTest@333d4a8c]" started-at="2024-10-12T15:05:35 IST" name="tearDown" finished-at="2024-10-12T15:05:36 IST" duration-ms="245" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.E2EChekoutTest@333d4a8c]" started-at="2024-10-12T15:07:55 IST" name="tearDown" finished-at="2024-10-12T15:07:58 IST" duration-ms="2895" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.demowebshop.tests.E2EChekoutTest -->
     </test> <!-- E2E -->
-    <test started-at="2024-10-12T15:04:25 IST" name="RegistrationTest" finished-at="2024-10-12T15:05:40 IST" duration-ms="74621">
+    <test started-at="2024-10-12T15:07:07 IST" name="RegistrationTest" finished-at="2024-10-12T15:08:25 IST" duration-ms="77455">
       <class name="com.demowebshop.tests.RegistartionDP">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.RegistartionDP@3de8f619]" started-at="2024-10-12T15:05:11 IST" name="initDriver" finished-at="2024-10-12T15:05:14 IST" duration-ms="2874" status="PASS">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.RegistartionDP@3de8f619]" started-at="2024-10-12T15:07:43 IST" name="initDriver" finished-at="2024-10-12T15:07:53 IST" duration-ms="9930" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -147,39 +184,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="verifyUserIsAbleToMultipleRegisterUsingCorrectCreds(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demowebshop.tests.RegistartionDP@3de8f619]" started-at="2024-10-12T15:05:14 IST" name="verifyUserIsAbleToMultipleRegisterUsingCorrectCreds" data-provider="getData" finished-at="2024-10-12T15:05:20 IST" duration-ms="6330" status="PASS">
+        <test-method signature="verifyUserIsAbleToMultipleRegisterUsingCorrectCreds(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demowebshop.tests.RegistartionDP@3de8f619]" started-at="2024-10-12T15:07:53 IST" name="verifyUserIsAbleToMultipleRegisterUsingCorrectCreds" data-provider="getData" finished-at="2024-10-12T15:07:59 IST" duration-ms="5296" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Wan]]>
+                <![CDATA[Peter]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[King]]>
+                <![CDATA[Barton]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[kit.halvorson@yahoo.com]]>
+                <![CDATA[al.towne@gmail.com]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[jfnfzlcug6rfz7]]>
+                <![CDATA[we1qzkq0]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserIsAbleToMultipleRegisterUsingCorrectCreds -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.RegistartionDP@3de8f619]" started-at="2024-10-12T15:05:20 IST" name="tearDown" finished-at="2024-10-12T15:05:20 IST" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.RegistartionDP@3de8f619]" started-at="2024-10-12T15:07:59 IST" name="tearDown" finished-at="2024-10-12T15:07:59 IST" duration-ms="592" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.demowebshop.tests.RegistartionDP -->
       <class name="com.demowebshop.tests.registrationTest">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.registrationTest@2ab4bc72]" started-at="2024-10-12T15:05:20 IST" name="initDriver" finished-at="2024-10-12T15:05:25 IST" duration-ms="4591" status="PASS">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.registrationTest@2ab4bc72]" started-at="2024-10-12T15:07:59 IST" name="initDriver" finished-at="2024-10-12T15:08:09 IST" duration-ms="9346" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -188,17 +225,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="verifyUserAbleToRegisterWithValidCredn()[pri:0, instance:com.demowebshop.tests.registrationTest@2ab4bc72]" started-at="2024-10-12T15:05:25 IST" name="verifyUserAbleToRegisterWithValidCredn" finished-at="2024-10-12T15:05:31 IST" duration-ms="6047" status="PASS">
+        <test-method signature="verifyUserAbleToRegisterWithValidCredn()[pri:0, instance:com.demowebshop.tests.registrationTest@2ab4bc72]" started-at="2024-10-12T15:08:09 IST" name="verifyUserAbleToRegisterWithValidCredn" finished-at="2024-10-12T15:08:11 IST" duration-ms="2921" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserAbleToRegisterWithValidCredn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.registrationTest@2ab4bc72]" started-at="2024-10-12T15:05:31 IST" name="tearDown" finished-at="2024-10-12T15:05:31 IST" duration-ms="189" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.registrationTest@2ab4bc72]" started-at="2024-10-12T15:08:11 IST" name="tearDown" finished-at="2024-10-12T15:08:12 IST" duration-ms="177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.demowebshop.tests.registrationTest -->
       <class name="com.demowebshop.tests.ExcelReadRegistrationTest">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.ExcelReadRegistrationTest@4e5ed836]" started-at="2024-10-12T15:05:31 IST" name="initDriver" finished-at="2024-10-12T15:05:36 IST" duration-ms="4796" status="PASS">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.ExcelReadRegistrationTest@4e5ed836]" started-at="2024-10-12T15:08:12 IST" name="initDriver" finished-at="2024-10-12T15:08:14 IST" duration-ms="2557" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -207,17 +244,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="verifyUserAbleToRegisterWithValidCredn()[pri:0, instance:com.demowebshop.tests.ExcelReadRegistrationTest@4e5ed836]" started-at="2024-10-12T15:05:36 IST" name="verifyUserAbleToRegisterWithValidCredn" finished-at="2024-10-12T15:05:39 IST" duration-ms="3583" status="PASS">
+        <test-method signature="verifyUserAbleToRegisterWithValidCredn()[pri:0, instance:com.demowebshop.tests.ExcelReadRegistrationTest@4e5ed836]" started-at="2024-10-12T15:08:14 IST" name="verifyUserAbleToRegisterWithValidCredn" finished-at="2024-10-12T15:08:24 IST" duration-ms="10085" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserAbleToRegisterWithValidCredn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.ExcelReadRegistrationTest@4e5ed836]" started-at="2024-10-12T15:05:39 IST" name="tearDown" finished-at="2024-10-12T15:05:40 IST" duration-ms="273" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.ExcelReadRegistrationTest@4e5ed836]" started-at="2024-10-12T15:08:24 IST" name="tearDown" finished-at="2024-10-12T15:08:25 IST" duration-ms="288" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.demowebshop.tests.ExcelReadRegistrationTest -->
       <class name="com.demowebshop.tests.RegistrationDP2">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.RegistrationDP2@710636b0]" started-at="2024-10-12T15:04:25 IST" name="initDriver" finished-at="2024-10-12T15:04:39 IST" duration-ms="14001" status="PASS">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.RegistrationDP2@710636b0]" started-at="2024-10-12T15:07:08 IST" name="initDriver" finished-at="2024-10-12T15:07:20 IST" duration-ms="12880" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -226,18 +263,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="verifyUserAbleToMultipleRegisterWithValidCredn(java.util.ArrayList)[pri:0, instance:com.demowebshop.tests.RegistrationDP2@710636b0]" started-at="2024-10-12T15:04:39 IST" name="verifyUserAbleToMultipleRegisterWithValidCredn" data-provider="getData" finished-at="2024-10-12T15:05:07 IST" duration-ms="27771" status="PASS">
+        <test-method signature="verifyUserAbleToMultipleRegisterWithValidCredn(java.util.ArrayList)[pri:0, instance:com.demowebshop.tests.RegistrationDP2@710636b0]" started-at="2024-10-12T15:07:20 IST" name="verifyUserAbleToMultipleRegisterWithValidCredn" data-provider="getData" finished-at="2024-10-12T15:07:39 IST" duration-ms="18891" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Person [fName=Kendra, lName=Hansen, email=adelina.predovic@yahoo.com, password=zy8myvpx8iwm, confirmPassword=zy8myvpx8iwm], Person [fName=Jaimee, lName=Kihn, email=tequila.purdy@yahoo.com, password=zy8myvpx8iwm, confirmPassword=zy8myvpx8iwm]]]]>
+                <![CDATA[[Person [fName=Vallie, lName=Willms, email=kiera.gleichner@yahoo.com, password=9tp22ywhu, confirmPassword=9tp22ywhu], Person [fName=Lesley, lName=Lubowitz, email=florentino.beer@hotmail.com, password=9tp22ywhu, confirmPassword=9tp22ywhu]]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserAbleToMultipleRegisterWithValidCredn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.RegistrationDP2@710636b0]" started-at="2024-10-12T15:05:07 IST" name="tearDown" finished-at="2024-10-12T15:05:11 IST" duration-ms="3531" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.RegistrationDP2@710636b0]" started-at="2024-10-12T15:07:39 IST" name="tearDown" finished-at="2024-10-12T15:07:43 IST" duration-ms="3954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

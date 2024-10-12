@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.demowebshop.tests.loginTest" class="method navigator-link" hash-for-method="verifyUserAbleToLoginwithValidCredn">verifyUserAbleToLoginwithValidCredn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -128,12 +142,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.demowebshop.tests.loginTest" class="method navigator-link" hash-for-method="verifyUserAbleToLoginwithValidCredn">verifyUserAbleToLoginwithValidCredn</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.demowebshop.tests.RegistrationDP2" class="method navigator-link" hash-for-method="verifyUserAbleToMultipleRegisterWithValidCredn([Person [fName=Kendra, lName=Hansen, email=adelina.predovic@yahoo.com, password=zy8myvpx8iwm, confir...)">verifyUserAbleToMultipleRegisterWithValidCredn([Person [fName=Kendra, lName=Hansen, email=adelina.predovic@yahoo.com, password=zy8myvpx8iwm, confir...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.demowebshop.tests.RegistrationDP2" class="method navigator-link" hash-for-method="verifyUserAbleToMultipleRegisterWithValidCredn([Person [fName=Vallie, lName=Willms, email=kiera.gleichner@yahoo.com, password=9tp22ywhu, confirmPas...)">verifyUserAbleToMultipleRegisterWithValidCredn([Person [fName=Vallie, lName=Willms, email=kiera.gleichner@yahoo.com, password=9tp22ywhu, confirmPas...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -148,7 +157,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.demowebshop.tests.RegistartionDP" class="method navigator-link" hash-for-method="verifyUserIsAbleToMultipleRegisterUsingCorrectCreds(Wan, King, kit.halvorson@yahoo.com, jfnfzlcug6rfz7)">verifyUserIsAbleToMultipleRegisterUsingCorrectCreds(Wan, King, kit.halvorson@yahoo.com, jfnfzlcug6rfz7)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.demowebshop.tests.RegistartionDP" class="method navigator-link" hash-for-method="verifyUserIsAbleToMultipleRegisterUsingCorrectCreds(Peter, Barton, al.towne@gmail.com, we1qzkq0)">verifyUserIsAbleToMultipleRegisterUsingCorrectCreds(Peter, Barton, al.towne@gmail.com, we1qzkq0)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -163,6 +172,30 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.demowebshop.tests.loginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserAbleToLoginwithValidCredn">
+                  </a> <!-- verifyUserAbleToLoginwithValidCredn -->
+                  <span class="method-name">verifyUserAbleToLoginwithValidCredn</span>
+                  <div class="stack-trace">java.lang.AssertionError: Logged Mail is not matching expected [SnehaBEnoy@mail.com] but found [obsqura24@gmail.com]
+	at com.demowebshop.tests.loginTest.verifyUserAbleToLoginwithValidCredn(loginTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -186,10 +219,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyUserAbleToMultipleRegisterWithValidCredn([Person [fName=Kendra, lName=Hansen, email=adelina.predovic@yahoo.com, password=zy8myvpx8iwm, confir...)">
-                  </a> <!-- verifyUserAbleToMultipleRegisterWithValidCredn([Person [fName=Kendra, lName=Hansen, email=adelina.predovic@yahoo.com, password=zy8myvpx8iwm, confir...) -->
+                  <a name="verifyUserAbleToMultipleRegisterWithValidCredn([Person [fName=Vallie, lName=Willms, email=kiera.gleichner@yahoo.com, password=9tp22ywhu, confirmPas...)">
+                  </a> <!-- verifyUserAbleToMultipleRegisterWithValidCredn([Person [fName=Vallie, lName=Willms, email=kiera.gleichner@yahoo.com, password=9tp22ywhu, confirmPas...) -->
                   <span class="method-name">verifyUserAbleToMultipleRegisterWithValidCredn</span>
-                  <span class="parameters">([Person [fName=Kendra, lName=Hansen, email=adelina.predovic@yahoo.com, password=zy8myvpx8iwm, confirmPassword=zy8myvpx8iwm], Person [fName=Jaimee, lName=Kihn, email=tequila.purdy@yahoo.com, password=zy8myvpx8iwm, confirmPassword=zy8myvpx8iwm]])</span>
+                  <span class="parameters">([Person [fName=Vallie, lName=Willms, email=kiera.gleichner@yahoo.com, password=9tp22ywhu, confirmPassword=9tp22ywhu], Person [fName=Lesley, lName=Lubowitz, email=florentino.beer@hotmail.com, password=9tp22ywhu, confirmPassword=9tp22ywhu]])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -205,21 +238,6 @@
                   <a name="verifyApparelAndShoesDisplayItems">
                   </a> <!-- verifyApparelAndShoesDisplayItems -->
                   <span class="method-name">verifyApparelAndShoesDisplayItems</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.demowebshop.tests.loginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUserAbleToLoginwithValidCredn">
-                  </a> <!-- verifyUserAbleToLoginwithValidCredn -->
-                  <span class="method-name">verifyUserAbleToLoginwithValidCredn</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -277,10 +295,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyUserIsAbleToMultipleRegisterUsingCorrectCreds(Wan, King, kit.halvorson@yahoo.com, jfnfzlcug6rfz7)">
-                  </a> <!-- verifyUserIsAbleToMultipleRegisterUsingCorrectCreds(Wan, King, kit.halvorson@yahoo.com, jfnfzlcug6rfz7) -->
+                  <a name="verifyUserIsAbleToMultipleRegisterUsingCorrectCreds(Peter, Barton, al.towne@gmail.com, we1qzkq0)">
+                  </a> <!-- verifyUserIsAbleToMultipleRegisterUsingCorrectCreds(Peter, Barton, al.towne@gmail.com, we1qzkq0) -->
                   <span class="method-name">verifyUserIsAbleToMultipleRegisterUsingCorrectCreds</span>
-                  <span class="parameters">(Wan,King,kit.halvorson@yahoo.com,jfnfzlcug6rfz7)</span>
+                  <span class="parameters">(Peter,Barton,al.towne@gmail.com,we1qzkq0)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -439,45 +457,45 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyUserAbleToMultipleRegisterWithValidCredn')
-data.setCell(0, 2, 'com.demowebshop.tests.RegistrationDP2')
-data.setCell(0, 3, 27771);
+data.setCell(0, 1, 'verifyNewUserRegisterAndCheckoutProduct')
+data.setCell(0, 2, 'com.demowebshop.tests.E2EChekoutTest')
+data.setCell(0, 3, 20639);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyNewUserRegisterAndCheckoutProduct')
-data.setCell(1, 2, 'com.demowebshop.tests.E2EChekoutTest')
-data.setCell(1, 3, 27765);
+data.setCell(1, 1, 'verifyUserAbleToMultipleRegisterWithValidCredn')
+data.setCell(1, 2, 'com.demowebshop.tests.RegistrationDP2')
+data.setCell(1, 3, 18891);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyApparelAndShoesDisplayItems')
-data.setCell(2, 2, 'com.demowebshop.tests.ApparelAndShoesProductTest')
-data.setCell(2, 3, 23310);
+data.setCell(2, 1, 'verifyUserAbleToRegisterWithValidCredn')
+data.setCell(2, 2, 'com.demowebshop.tests.ExcelReadRegistrationTest')
+data.setCell(2, 3, 10085);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyDiamondTextInSearchResult')
-data.setCell(3, 2, 'com.demowebshop.tests.DiamondSearchTest')
-data.setCell(3, 3, 13334);
+data.setCell(3, 1, 'verifyUserAbleToLoginwithValidCredn')
+data.setCell(3, 2, 'com.demowebshop.tests.loginTest')
+data.setCell(3, 3, 5933);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyUserAbleToLoginwithValidCredn')
-data.setCell(4, 2, 'com.demowebshop.tests.loginTest')
-data.setCell(4, 3, 11080);
+data.setCell(4, 1, 'verifyUserIsAbleToMultipleRegisterUsingCorrectCreds')
+data.setCell(4, 2, 'com.demowebshop.tests.RegistartionDP')
+data.setCell(4, 3, 5296);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyUserIsAbleToMultipleRegisterUsingCorrectCreds')
-data.setCell(5, 2, 'com.demowebshop.tests.RegistartionDP')
-data.setCell(5, 3, 6330);
+data.setCell(5, 1, 'verifyDiamondTextInSearchResult')
+data.setCell(5, 2, 'com.demowebshop.tests.DiamondSearchTest')
+data.setCell(5, 3, 3880);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyUserAbleToRegisterWithValidCredn')
-data.setCell(6, 2, 'com.demowebshop.tests.registrationTest')
-data.setCell(6, 3, 6047);
+data.setCell(6, 1, 'userAbleToSubscribeWithValidMail')
+data.setCell(6, 2, 'com.demowebshop.tests.SubScriptionTest')
+data.setCell(6, 3, 3744);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'verifyUserAbleToRegisterWithValidCredn')
-data.setCell(7, 2, 'com.demowebshop.tests.ExcelReadRegistrationTest')
-data.setCell(7, 3, 3583);
+data.setCell(7, 2, 'com.demowebshop.tests.registrationTest')
+data.setCell(7, 3, 2921);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifySearchWithEmptyKeyword')
-data.setCell(8, 2, 'com.demowebshop.tests.EmptySearchCaseTest')
-data.setCell(8, 3, 2119);
+data.setCell(8, 1, 'verifyApparelAndShoesDisplayItems')
+data.setCell(8, 2, 'com.demowebshop.tests.ApparelAndShoesProductTest')
+data.setCell(8, 3, 1322);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'userAbleToSubscribeWithValidMail')
-data.setCell(9, 2, 'com.demowebshop.tests.SubScriptionTest')
-data.setCell(9, 3, 1855);
+data.setCell(9, 1, 'verifySearchWithEmptyKeyword')
+data.setCell(9, 2, 'com.demowebshop.tests.EmptySearchCaseTest')
+data.setCell(9, 3, 631);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -508,195 +526,191 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.demowebshop.tests.loginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.demowebshop.tests.DiamondSearchTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initDriver(null)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.demowebshop.tests.DiamondSearchTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initDriver(null)</span>
-                <span class="method-start">4 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">com.demowebshop.tests.EmptySearchCaseTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initDriver(null)</span>
-                <span class="method-start">4 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demowebshop.tests.ApparelAndShoesProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initDriver(null)</span>
-                <span class="method-start">5 ms</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demowebshop.tests.loginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initDriver(null)</span>
+                <span class="method-start">11 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demowebshop.tests.RegistrationDP2</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initDriver(null)</span>
-                <span class="method-start">292 ms</span>
+                <span class="method-start">372 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserAbleToMultipleRegisterWithValidCredn([Person [fName=Vallie, lName=Willms, email=kiera.gleichner@yahoo.com, password=9tp22ywhu, confirmPas...)</span>
+                <span class="method-start">13253 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demowebshop.tests.ApparelAndShoesProductTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyApparelAndShoesDisplayItems</span>
-                <span class="method-start">11088 ms</span>
+                <span class="method-start">13948 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.demowebshop.tests.loginTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyUserAbleToLoginwithValidCredn</span>
-                <span class="method-start">14143 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.demowebshop.tests.RegistrationDP2</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyUserAbleToMultipleRegisterWithValidCredn([Person [fName=Kendra, lName=Hansen, email=adelina.predovic@yahoo.com, password=zy8myvpx8iwm, confir...)</span>
-                <span class="method-start">14300 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">15278 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demowebshop.tests.EmptySearchCaseTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifySearchWithEmptyKeyword</span>
-                <span class="method-start">15591 ms</span>
+                <span class="method-start">16350 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">17735 ms</span>
+                <span class="method-start">16983 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demowebshop.tests.DiamondSearchTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyDiamondTextInSearchResult</span>
-                <span class="method-start">19802 ms</span>
+                <span class="method-start">17627 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demowebshop.tests.loginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">25223 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUserAbleToLoginwithValidCredn</span>
+                <span class="method-start">18328 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demowebshop.tests.SubScriptionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initDriver(null)</span>
+                <span class="method-start">19473 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demowebshop.tests.E2EChekoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initDriver(null)</span>
+                <span class="method-start">20240 ms</span>
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demowebshop.tests.DiamondSearchTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">33146 ms</span>
+                <span class="method-start">21509 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.demowebshop.tests.ApparelAndShoesProductTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.demowebshop.tests.loginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">34401 ms</span>
+                <span class="method-start">24727 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.demowebshop.tests.SubScriptionTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initDriver(null)</span>
-                <span class="method-start">38132 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.demowebshop.tests.E2EChekoutTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initDriver(null)</span>
-                <span class="method-start">38132 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.demowebshop.tests.RegistrationDP2</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">42072 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.demowebshop.tests.E2EChekoutTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyNewUserRegisterAndCheckoutProduct</span>
-                <span class="method-start">42484 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.demowebshop.tests.RegistartionDP</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initDriver(null)</span>
-                <span class="method-start">45691 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyUserIsAbleToMultipleRegisterUsingCorrectCreds(Wan, King, kit.halvorson@yahoo.com, jfnfzlcug6rfz7)</span>
-                <span class="method-start">48566 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demowebshop.tests.SubScriptionTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">userAbleToSubscribeWithValidMail</span>
-                <span class="method-start">49381 ms</span>
+                <span class="method-start">25952 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demowebshop.tests.E2EChekoutTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyNewUserRegisterAndCheckoutProduct</span>
+                <span class="method-start">27546 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demowebshop.tests.SubScriptionTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">51237 ms</span>
+                <span class="method-start">29697 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demowebshop.tests.RegistrationDP2</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">32145 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demowebshop.tests.RegistartionDP</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initDriver(null)</span>
+                <span class="method-start">36164 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserIsAbleToMultipleRegisterUsingCorrectCreds(Peter, Barton, al.towne@gmail.com, we1qzkq0)</span>
+                <span class="method-start">46095 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demowebshop.tests.E2EChekoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">48185 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demowebshop.tests.RegistartionDP</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">54897 ms</span>
+                <span class="method-start">51391 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demowebshop.tests.registrationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initDriver(null)</span>
-                <span class="method-start">55096 ms</span>
+                <span class="method-start">51989 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUserAbleToRegisterWithValidCredn</span>
-                <span class="method-start">59687 ms</span>
+                <span class="method-start">61335 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">65734 ms</span>
+                <span class="method-start">64256 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demowebshop.tests.ExcelReadRegistrationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initDriver(null)</span>
-                <span class="method-start">65923 ms</span>
+                <span class="method-start">64433 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.demowebshop.tests.E2EChekoutTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">70249 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.demowebshop.tests.ExcelReadRegistrationTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyUserAbleToRegisterWithValidCredn</span>
-                <span class="method-start">70719 ms</span>
+                <span class="method-start">66991 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">74302 ms</span>
+                <span class="method-start">77077 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
