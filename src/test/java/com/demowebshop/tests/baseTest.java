@@ -1,7 +1,7 @@
 package com.demowebshop.tests;
 
 import java.io.IOException;
-
+import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -14,6 +14,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
+import com.demoshop.Context.DriverManager;
 import com.demoshop.pageObject.CartPage;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -41,8 +42,13 @@ public class baseTest {
 		}
 		
 		getDriver(browserName);
-		driver.manage().window().maximize();
-		driver.get(prop.getProperty("tndUrl"));
+		DriverManager.setDriver(driver);
+		//driver.manage().window().maximize();
+		DriverManager.getDriver().manage().window().maximize();
+		DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
+		//driver.get(prop.getProperty("tndUrl"));
+		String url=prop.getProperty("tndUrl");
+		DriverManager.getDriver().get(url);
 		initPages();
 	}
 	
@@ -83,6 +89,6 @@ public class baseTest {
 	@AfterMethod
 	public void tearDown() {
 		
-	driver.quit();
+	DriverManager.getDriver().quit();
 	}
 }

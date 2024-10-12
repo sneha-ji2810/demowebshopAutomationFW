@@ -1,4 +1,5 @@
 C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\com\demoshop\Context\Constants.java
+C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\com\demoshop\Context\DriverManager.java
 C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\com\demoshop\Listeners\ReportListener.java
 C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\com\demoshop\model\Person.java
 C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\com\demoshop\pageObject\CartPage.java
@@ -6,10 +7,10 @@ C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\com\demoshop\pageO
 C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\com\demoshop\pageObject\loginPage.java
 C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\com\demoshop\pageObject\registerPage.java
 C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\com\demoshop\pageObject\SearchPage.java
-C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\utils\DataUtils.java
-C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\utils\ExcelReader.java
-C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\utils\PageActions.java
-C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\utils\ReportUtil.java
-C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\utils\TestProperties.java
-C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\utils\UniqueGenerator.java
-C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\utils\WaitUtils.java
+C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\com\demoshop\utils\DataUtils.java
+C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\com\demoshop\utils\ExcelReader.java
+C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\com\demoshop\utils\PageActions.java
+C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\com\demoshop\utils\ReportUtil.java
+C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\com\demoshop\utils\TestProperties.java
+C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\com\demoshop\utils\UniqueGenerator.java
+C:\Users\jijin\git\demoweb\DemoWebShopFramework\src\main\java\com\demoshop\utils\WaitUtils.java
