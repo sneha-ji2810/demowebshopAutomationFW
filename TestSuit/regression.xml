@@ -3,6 +3,7 @@
 <suite name="Suite" parallel="tests" thread-count="5">
 <listeners>
 <listener class-name="com.demoshop.Listeners.ReportListener"></listener>
+<listener class-name="com.demoshop.Listeners.MyTransformer"></listener>
 </listeners>
   <test  name="SearchTest">
     <classes>

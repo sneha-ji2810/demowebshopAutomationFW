@@ -27,89 +27,89 @@ public class CartPage extends PageActions{
 	}
 	
 	@FindBy(xpath="//*[@class=\"product-title\"]//a")
-	WebElement productsListedTxt;
+	private WebElement productsListedTxt;
 	
 	@FindBy(xpath="//*[@class=\"breadcrumb\"]//ul")
-	WebElement cartHeading;
+	private WebElement cartHeading;
 	
 	@FindBy(css="input#add-to-cart-button-36")
-	WebElement addToCartBtn;
+	private WebElement addToCartBtn;
 	
 	@FindBy(css="#bar-notification p")
-	WebElement addCartMsg;
+	private WebElement addCartMsg;
 	
 	@FindBy(css=".ico-cart .cart-qty")
-	WebElement addCartQty;
+	private WebElement addCartQty;
 	
 	@FindBy(css=".ico-cart .cart-label")
-	WebElement moveToCartPageBtn;
+	private WebElement moveToCartPageBtn;
 	
 	@FindBy(css=".page.shopping-cart-page .page-title")
-	WebElement cartPageHeading;
+	private WebElement cartPageHeading;
 	
 	@FindBy(css=".inputs #CountryId")
-	WebElement selectCountry;
+	private WebElement selectCountry;
 	
 	@FindBy(css=".inputs select#BillingNewAddress_CountryId")
-	WebElement selectCountryBilling;
+	private WebElement selectCountryBilling;
 	
 	
 	@FindBy(css=".terms-of-service #termsofservice")
-	WebElement selectAgreement;
+	private WebElement selectAgreement;
 	 
 	@FindBy(css=".checkout-buttons #checkout")
-	WebElement checkOutBtn;
+	private WebElement checkOutBtn;
 	
 	@FindBy(css=".page.checkout-page h1")
-	WebElement checkOutPageHeading;
+	private WebElement checkOutPageHeading;
 	
 	@FindBy(css="[name=\"BillingNewAddress.City\"]")
-	WebElement cityInBilling;
+	private WebElement cityInBilling;
 	
 	@FindBy(css="#BillingNewAddress_Address1")
-	WebElement addressBilling;
+	private WebElement addressBilling;
 	
 	@FindBy(css="#BillingNewAddress_ZipPostalCode")
-	WebElement zipCodeBilling;
+	private WebElement zipCodeBilling;
 	
 	@FindBy(css="#BillingNewAddress_PhoneNumber")
-	WebElement phoneNumberBilling;
+	private WebElement phoneNumberBilling;
 	
 	@FindBy(css="#billing-buttons-container [title=Continue]")
-	WebElement ContinueBtnBilling;
+	private WebElement ContinueBtnBilling;
 	
 	@FindBy(css="#checkout-step-shipping [title='Continue']")
-	WebElement ContinueShippingAddr;
+	private WebElement ContinueShippingAddr;
 	
 	@FindBy(css="#shipping-method-buttons-container input")
-	WebElement ContinueShippingMethodBtn;
+	private WebElement ContinueShippingMethodBtn;
 	
 
 	@FindBy(css="#payment-method-buttons-container [value='Continue']")
-	WebElement ContinuePaymentMethod;
+	private WebElement ContinuePaymentMethod;
 	
 	@FindBy(xpath="//*[@id=\"opc-shipping\"]//h2")
-	WebElement shippingAdrHead;
+	private WebElement shippingAdrHead;
 	
 	
 	@FindBy(css=".section.payment-info td p")
-	WebElement paymentMethodSelected;
+	private WebElement paymentMethodSelected;
 	
 	
 	@FindBy(css=".button-1.payment-info-next-step-button")
-	WebElement continuePayemntInfo;
+	private WebElement continuePayemntInfo;
 	
 	@FindBy(css=".billing-info .payment-method")
-	WebElement payemntMethodTxt;
+	private WebElement payemntMethodTxt;
 	
 	@FindBy(css=".shipping-info .shipping-method")
-	WebElement shippingMethodTxt;
+	private WebElement shippingMethodTxt;
 	
 	@FindBy(css="#confirm-order-buttons-container .button-1.confirm-order-next-step-button")
-	WebElement confirmOrder;
+	private WebElement confirmOrder;
 	
 	@FindBy(css=".section.order-completed strong")
-	WebElement orderCompletionTxt;
+	private WebElement orderCompletionTxt;
 	
 	
 	
